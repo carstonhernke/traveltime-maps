@@ -1,7 +1,7 @@
 import requests, json, numpy as np
 
 def generate_times_matrix(coordinates):
-    #coordinates = np.genfromtxt("/Users/carstonhernke/PycharmProjects/geodata/coordinates_mpls.csv", delimiter=",")
+    #coordinates = np.genfromtxt("coordinates.csv", delimiter=",")
     loc_str = str("")
     for i in range(0, coordinates.shape[0]):
         loc_str = loc_str+str(coordinates[i,2])+","+str(coordinates[i,1])+";"
